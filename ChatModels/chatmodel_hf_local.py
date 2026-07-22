@@ -13,6 +13,6 @@ from langchain_huggingface import HuggingFacePipeline
 
 llm = HuggingFacePipeline(pipeline = hf_pipeline)
 
-prompt = "Explain Deep learning in brief"
+prompt = "What is machine learning?"
 generated_text = llm.invoke(prompt)
 print(generated_text)
