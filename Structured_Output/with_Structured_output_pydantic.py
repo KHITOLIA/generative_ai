@@ -1,7 +1,7 @@
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 load_dotenv()
-from typing import TypedDict, Annotated, Optional, Literal
+from typing import Annotated, Optional, Literal
 from pydantic import Field, BaseModel
 
 model = ChatOpenAI(model = "gpt-5.5", temperature = 0.5, max_completion_tokens = 1000)
@@ -39,5 +39,3 @@ structured_output_model = model.with_structured_output(Review)
 
 response = structured_output_model.invoke(review)
 print(response)
-
-
