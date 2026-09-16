@@ -1,0 +1,32 @@
+<form method="post" >
+    Candidate Name : 
+    <input type="text" name="candidate_name" placeholder="Enter your name " required>
+    <br><br>
+    Candidate Skills
+    <input type="text" name="candidate_skills" placeholder="Enter your skills " required>
+    <br></br>
+    Candidate Experience
+    <input type="text" name="candidate_experience" placeholder="How much exp. you have " required>
+    <br></br>
+    Candidate Projects
+        <input type="text" name="candidate_projects" placeholder="Provide all your projects you have completed" required>
+    <br></br>
+    Target Role
+        <input type="text" name="target_role" placeholder="Role you want to apply" required>
+    <br></br>
+    Company Name
+        <input type="text" name="company_name" placeholder="Enter the company name " required>
+    <br></br>
+        JD 
+        <input type="text" name="job_description" placeholder="Enter your skills " required>
+    <br></br>
+    Company Email
+        <input type="text" name="company_email" placeholder="Enter the email id of company mentioned above " required>
+
+<br></br>
+    <button type="submit">Generate Email</button>
+    </form>
+
+{% if result %}
+{{result}}
+{% endif %}
